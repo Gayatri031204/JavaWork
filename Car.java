@@ -1,21 +1,20 @@
-package allprograms;
-class company{
-	 String name ="Two Wheeler";
+package Program;
+
+public class Car {
+String brand;
+int year;
+
+
+  Car(String carBrand,int carYear){ brand = carBrand; year = carYear; }
+ void displayInfo() {
+	System.out.println("Brand: " +brand);
+	System.out.println("Year:" +year);  
+}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+Car mycar = new Car("Toyoto",2020);
+
+mycar.displayInfo();
 	}
 
-
-	
-	public class Car extends company {
-	     
-	   String color = "Black";
-
-
-	public static void main(String[] arg){
-	Car B = new Car();
-	System.out.println("Car color is:" +B.color);
-	System.out.println("Car name is:" +B.name);
-	}
-	}
-
-
-
+}
